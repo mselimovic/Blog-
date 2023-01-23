@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap"); */
+
 body {
   overflow-x: hidden;
 }
@@ -10,7 +12,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.15;
+  opacity: 0.2;
   /* z-index: -1; */
 }
 
@@ -27,5 +29,39 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 35px;
+}
+
+.nav-tagline {
+  font-family: "Flow Circular", cursive;
+}
+
+.logo {
+  color: aqua;
+  padding: 5px 10px;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.outlined-div-dark {
+  outline: 2px solid black;
+}
+.outlined-div-aqua {
+  outline: 3px solid aqua;
+}
+.outlined-div-lime {
+  outline: 3px solid lime;
+}
+.outlined-div-purple {
+  outline: 3px solid purple;
+}
+
+img.float-left {
+  float: left;
+  margin-right: 10px;
+  height: 300px;
+  width: 350px;
 }
