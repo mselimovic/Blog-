@@ -1,10 +1,83 @@
+<br>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="neon.css" /> -->
   </head>
-  <body></body>
+  <body >
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+         <div class="logo">BLOG</div>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+    
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+           
+              <button class="btn btn-outline-warning my-2 my-sm-0 px-5" id="login">Log In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section>
+       <div>
+        <form class="mx-auto justify-content-center w-50">
+          <fieldset>
+            <div class="form-group row">
+              <label  class="col-sm-6 col-form-label py-3">Log In and start blogging</label>
+              
+              </div>
+          
+          <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">example@gmail.com</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+           <button  class="btn btn-info my-4">Log In</button>
+           <div class="horizontal-line">OR</div>
+           <div class="text-center">
+            <button type="submit" class="btn btn-primary my-2 px-5">Create an account</button>
+          </div>
+          </fieldset>
+        </form>
+        
+       </div>
+      
+      </section>
+  
+      <footer class="bg-warning">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 py-1 text-left">Copyright &copy; SugarHill Studio <img src="./assets/images/duckie.png" alt="sugarhill" height="27px"
+              /> 2023</div>
+      
+           </div>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+  </body>
 </html>

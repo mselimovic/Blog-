@@ -1,3 +1,8 @@
-document.getElementById("login").addEventListener("click", function () {
-  document.getElementById("hide").classList.add("hidden");
+"use strict";
+
+const loginBtn = document.getElementById("login");
+
+loginBtn.addEventListener("click", () => {
+  window.open("login.html", "_blank");
+  console.log("klik");
 });
