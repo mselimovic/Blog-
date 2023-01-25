@@ -74,19 +74,4 @@ function validatePassword() {
     document.querySelector("#InputPassword1").classList.add("is-valid");
   }
 }
-function validateTerms() {
-  let terms = termsInput.checked;
-  let message = document.getElementById("UserHelp");
-  message.innerHTML = "";
-  if (username.length < 3) {
-    message.innerHTML = "Username must be at least 3 characters long";
-    document.querySelector("#InputUser1").classList.remove("is-valid");
-    document.querySelector("#InputUser1").classList.add("is-invalid");
-    message.classList.remove("text-muted");
-    message.classList.add("text-danger");
-  } else {
-    message.innerHTML = "";
-    document.querySelector("#InputUser1").classList.remove("is-invalid");
-    document.querySelector("#InputUser1").classList.add("is-valid");
-  }
-}
+function validateTerms() {}
