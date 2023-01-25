@@ -43,7 +43,7 @@
         <form class="mx-auto justify-content-center w-50">
           <fieldset>
             <div class="form-group row">
-              <label  class="col-sm-6 col-form-label py-3">Log In and start blogging</label>
+              <label  class="col-sm-6 col-form-label py-3">Please fill in the registration form</label>
               
               </div>
           
@@ -53,14 +53,46 @@
               <small id="emailHelp" class="form-text text-muted">example@gmail.com</small>
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <label for="exampleInputUser1" class="form-label mt-2">Username</label>
+              <input type="username" class="form-control" id="exampleInputUser1"placeholder="Username">
             </div>
-           <button  class="btn btn-info my-4">Log In</button>
-           <div class="horizontal-line">OR</div>
-           <div class="text-center">
-            <button type="reset" class="btn btn-primary my-2 px-5" id="register">Create an account</button>
-          </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="form-label mt-2">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <small id="emailHelp" class="form-text text-muted">Password must contain at least 6 characters</small>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+              <label class="form-check-label" for="optionsRadios1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              <label class="form-check-label" for="optionsRadios2">
+                Female
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              <label class="form-check-label" for="optionsRadios2">
+                Potato
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="col-form-label mt-2" for="exampleInputAge1">Year of Birth</label>
+              <input type="number" class="form-control" placeholder="YYYY" id="inputDefault">
+            </div>
+            <div class="d-flex justify-content-center">
+            <div class="form-check py-4">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                I agree to the <a href="https://i.chzbgr.com/full/9596952832/hA0302FBB/funny-meme-about-how-people-never-read-the-terms-and-conditions-kathryn-hahn-wandavision-winking" target="_blank" >Terms and conditions</a>
+              </label>
+            </div>
+            </div>
+           <button  class="btn btn-success my-4 px-5">Register</button>
+          
           </fieldset>
         </form>
         
