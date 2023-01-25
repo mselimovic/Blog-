@@ -1,0 +1,33 @@
+"use strict";
+
+const loginBtn = document.getElementById("login");
+const registerBtn = document.getElementById("register");
+const userNameInput = document.querySelector("#InputUser1");
+const emailInput = document.querySelector("#InputEmail1");
+let passwordInput = document.querySelector("#InputPassword1");
+let termsInput = document.querySelector("#flexCheckDefault");
+// Routing
+loginBtn.addEventListener("click", () => {
+  window.open("login.html", "_self");
+});
+
+registerBtn.addEventListener("click", () => {
+  window.open("register.html", "_self");
+});
+
+// Registration form validation
+
+userNameInput.addEventListener("input", validateUserName);
+passwordInput.addEventListener("input", validatePassword);
+emailInput.addEventListener("input", validateInput);
+termsInput.addEventListener("input", validateTerms);
+
+function validateUserName() {
+  let username = userNameInput.value;
+  let message = document.getElementById("UserHelp");
+  message.innerHTML = "";
+  if (!username) {
+    message.innerHTML = "Username is required";
+    document.querySelector("#InputUser1").classList.add("is-invalid");
+  }
+}
