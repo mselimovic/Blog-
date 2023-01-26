@@ -6,6 +6,8 @@ const userNameInput = document.querySelector("#InputUser1");
 const emailInput = document.querySelector("#InputEmail1");
 let passwordInput = document.querySelector("#InputPassword1");
 let termsInput = document.querySelector("#flexCheckDefault");
+
+registerBtn.disabled = true;
 // Routing
 loginBtn.addEventListener("click", () => {
   window.open("login.html", "_self");
@@ -20,7 +22,6 @@ registerBtn.addEventListener("click", () => {
 userNameInput.addEventListener("input", validateUserName);
 passwordInput.addEventListener("input", validatePassword);
 emailInput.addEventListener("input", validateEmail);
-termsInput.addEventListener("input", validateTerms);
 
 function validateUserName() {
   let username = userNameInput.value;
@@ -74,4 +75,25 @@ function validatePassword() {
     document.querySelector("#InputPassword1").classList.add("is-valid");
   }
 }
-function validateTerms() {}
+
+function enableRegisterBtn() {
+  let userNameValid = document.getElementById("UserHelp").innerHTML === "";
+  let emailValid = document.getElementById("emailHelp").innerHTML === "";
+  let passwordValid = document.getElementById("passwordHelp").innerHTML === "";
+  let termsValid = termsInput.checked;
+
+  if (userNameValid && emailValid && passwordValid && termsValid) {
+    registerBtn.disabled = false;
+  } else {
+    registerBtn.disabled = true;
+  }
+}
+
+userNameInput.addEventListener("input", validateUserName);
+passwordInput.addEventListener("input", validatePassword);
+emailInput.addEventListener("input", validateEmail);
+
+userNameInput.addEventListener("input", enableRegisterBtn);
+passwordInput.addEventListener("input", enableRegisterBtn);
+emailInput.addEventListener("input", enableRegisterBtn);
+termsInput.addEventListener("input", enableRegisterBtn);
