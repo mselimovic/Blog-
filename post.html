@@ -39,32 +39,44 @@
         </div>
       </nav>
       <section>
-       <div>
-        <form class="mx-auto justify-content-center w-50">
-          <fieldset>
-            <div class="form-group row">
-              <label  class="col-sm-6 col-form-label py-3">Log In and start blogging</label>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3 text-left">123</div>
+            <div class="col-6 text-left"> <form class="mx-auto justify-content-center">
+              <fieldset>
+               
+                <div class="form-group">
+                  <label class="col-form-label mt-4" for="inputDefault">Title</label>
+                  <input type="text" class="form-control" placeholder="" id="inputDefault">
+                </div>
+           
+                <div class="form-group ">
+                  <label for="exampleTextarea" class="form-label mt-4">Textarea</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="formFile" class="form-label mt-4">Upload photo</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+           
+                <fieldset class="form-group">
               
-              </div>
-          
-          <div class="form-group">
-              <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">example@gmail.com</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-           <button  class="btn btn-info my-4">Log In</button>
-           <div class="horizontal-line">OR</div>
-           <div class="text-center">
-            <button type="reset" class="btn btn-primary my-2 px-5" id="createAccount">Create an account</button>
+                  <div class="form-check py-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Show the author name
+                    </label>
+                  </div>
+                 
+                </fieldset>
+               
+                <button type="submit" class="btn btn-warning">Post</button>
+              </fieldset>
+            </form></div>
+            <div class="col-3 text-left">123</div>
           </div>
-          </fieldset>
-        </form>
-        
-       </div>
+        </div>
+       
       
       </section>
   
@@ -81,5 +93,5 @@
       <script src="script.js" defer></script>
       <script src="routes.js" defer></script>
   </body>
- 
+  
 </html>

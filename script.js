@@ -1,6 +1,7 @@
 "use strict";
 
 const loginBtn = document.getElementById("login");
+const createAccountBtn = document.getElementById("createAccount");
 const registerBtn = document.getElementById("register");
 const userNameInput = document.querySelector("#InputUser1");
 const emailInput = document.querySelector("#InputEmail1");
@@ -8,14 +9,6 @@ let passwordInput = document.querySelector("#InputPassword1");
 let termsInput = document.querySelector("#flexCheckDefault");
 
 registerBtn.disabled = true;
-// Routing
-loginBtn.addEventListener("click", () => {
-  window.open("login.html", "_self");
-});
-
-registerBtn.addEventListener("click", () => {
-  window.open("register.html", "_self");
-});
 
 // Registration form validation
 

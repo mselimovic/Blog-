@@ -113,6 +113,8 @@ img.float-left {
   background-color: #fcdbdb;
 }
 
-#userHelp {
-  color: red;
+.col-3 {
+  border-color: #111;
+  border: 10px;
+  border-style: dashed;
 }
