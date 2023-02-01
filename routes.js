@@ -7,3 +7,9 @@ loginBtn.addEventListener("click", () => {
 createAccountBtn.addEventListener("click", () => {
   window.open("register.html", "_self");
 });
+
+// firebase
+
+$(document).ready(function () {
+  console.log("radi radi");
+});
