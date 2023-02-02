@@ -9,7 +9,3 @@ createAccountBtn.addEventListener("click", () => {
 });
 
 // firebase
-
-$(document).ready(function () {
-  console.log("radi radi");
-});

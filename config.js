@@ -1,7 +1,7 @@
 ("use strict");
 
 const firebaseConfig = {
-  apiKey: process?.env.FIREBASE_API_KEY,
+  apiKey: "AIzaSyBWh2koY53pNkyAIgRgb3qcewevMH1wwDM",
   authDomain: "blogproject-78bc0.firebaseapp.com",
   databaseURL: "https://blogproject-78bc0-default-rtdb.firebaseio.com",
   projectId: "blogproject-78bc0",
@@ -14,9 +14,11 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // database reference
+var database = firebase.database();
+var registerForm = document.getElementById("registerForm");
 var registerFormDB = firebase.database().ref("registerForm");
 
-document.getElementById("registerForm").addEventListener("submit", submitForm);
+registerForm.addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
@@ -25,7 +27,19 @@ function submitForm(e) {
   var password = getElementValue("InputPassword1");
 
   console.log(userName, email, password);
+
+  saveFormData(userName, email, password);
 }
+
+const saveFormData = (userName, email, password) => {
+  var newRegisterForm = registerFormDB.push();
+
+  newRegisterForm.set({
+    name: userName,
+    email: email,
+    password: password,
+  });
+};
 
 const getElementValue = (id) => {
   return document.getElementById(id).value;
